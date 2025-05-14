@@ -1,0 +1,149 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Iosevka Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0.75);
+    color: #e8dfc8;
+}
+
+tooltip {
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #a6adc8;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #e8dfc8;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #e8dfc8;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #e8dfc8;
+    color: #e8dfc8;
+    border-radius: 10px;
+}
+
+#custom-power_profile,
+#custom-weather,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#backlight {
+    background: transparent;
+    opacity: 0.8;
+    padding: 0px 8px;
+    margin: 2px 0px;
+    margin-top: 8px;
+}
+
+#temperature {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#temperature.critical {
+    color: #e8dfc8;
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: #1e1e2e;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-power_profile {
+    color: #e8dfc8;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: #e8dfc8;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0px;
+    margin-right: 10px
+}
+
+#network {
+    color: #e8dfc8;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#bluetooth {
+    color: #e8dfc8;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px
+} 
+
+#pulseaudio {
+    color: #e8dfc8;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: #e8dfc8;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#battery {
+    color: #e8dfc8;
+    border-radius: 0 10px 10px 0;
+    border-left: 0px;
+}
+
+#custom-weather {
+    border-radius: 0px 10px 10px 0px;
+    border-right: 0px;
+    margin-left: 0px;
+}
