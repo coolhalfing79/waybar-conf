@@ -1,9 +1,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "Iosevka Nerd Font";
     font-weight: bold;
-    font-size: 13px;
+    font-size: 1rem;
     min-height: 0;
 }
 
@@ -146,4 +145,10 @@ tooltip {
     border-radius: 0px 10px 10px 0px;
     border-right: 0px;
     margin-left: 0px;
+}
+
+#custom-simple-weather {
+    border-radius: 0px 10px 10px 0px;
+    border-right: 0px;
+    margin-left: 10px;
 }

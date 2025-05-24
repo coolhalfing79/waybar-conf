@@ -6,7 +6,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 40,
-    "modules-left": ["custom/weather","hyprland/workspaces"],
+    "modules-left": ["custom/simple-weather","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["network", "bluetooth","power-profiles-daemon","battery","backlight","pulseaudio","pulseaudio#microphone","clock"],
 
@@ -19,16 +19,16 @@
         "all-outputs": true,
         "on-click": "activate"
     },
-    
+
     "power-profiles-daemon": {
         "format": "{icon} ",
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
         "format-icons": {
-            "default": " ",
-            "performance": " ",
+            "default": "🚬",
+            "performance": "🚬",
             "balanced": " ",
-            "power-saver": " "
+            "power-saver": "🫧"
         }
     },
 
@@ -40,9 +40,16 @@
         "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
         "return-type" : "json"
     },
+   "custom/simple-weather" : {
+        //shows the current weather and forecast
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 300,
+        "exec" : "~/.config/waybar/scripts/simple-weather.sh"
+    },
 
     "tray": {
-        "icon-size": 18,
+        "icon-size": 20,
         "spacing": 10
     },
 
