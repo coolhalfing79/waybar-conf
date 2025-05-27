@@ -1,4 +1,5 @@
 * {
+    font-family: 'Red Hat Display', 'Font Awesome 6 Free';
     border: none;
     border-radius: 0;
     font-weight: bold;
@@ -7,7 +8,7 @@
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0.75);
+    background: #2d353b;
     color: #e8dfc8;
 }
 
@@ -62,7 +63,6 @@ tooltip {
     opacity: 0.8;
     padding: 0px 8px;
     margin: 2px 0px;
-    margin-top: 8px;
 }
 
 #temperature {
@@ -83,7 +83,6 @@ tooltip {
 }
 
 #workspaces {
-    background: #1e1e2e;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -104,7 +103,6 @@ tooltip {
 
 #clock {
     color: #e8dfc8;
-    border-radius: 10px 0px 0px 10px;
     border-right: 0px;
     margin-right: 10px
 }
@@ -137,8 +135,13 @@ tooltip {
 
 #battery {
     color: #e8dfc8;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
     border-left: 0px;
+}
+
+#battery.critical {
+    background: #e67e80;
+    color: #475258;
 }
 
 #custom-weather {
